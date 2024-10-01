@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>隐形服务(Stealth Server) - X360 Wiki</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u9690\u5f62\u670d\u52a1(Stealth Server)";
+        var mkdocs_page_input_path = "Software\\Plugins\\StealthServer\\StealthServer.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> X360 Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">主页</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../faq/">常见问题</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="https://nav.5141919.xyz">Xbox360导航页</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">软件</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >仪表盘</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >官方</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Apps/Offical/Dashboards/Blades/">Blades</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Apps/Offical/Dashboards/NXE/">NXE</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Apps/Offical/Dashboards/Kinect/">Kinect</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Apps/Offical/Dashboards/Metro/">Metro</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >自制</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Apps/Homebrew/Dashboards/Aurora/">Aurora</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Apps/Homebrew/Dashboards/FSD/">FSD</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >配置工具</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Apps/Homebrew/ConfigTools/DashLaunch/">DashLaunch</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">插件</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../UsbdSecPatch/UsbdSecPatch/">UsbdSecPatch</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">隐形服务(Stealth Server)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">介绍</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">建议</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">推荐的服务</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">提示</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">安装</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">安装后的建议</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">提示</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_8">安全建议</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">X360 Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">插件</li>
+      <li class="breadcrumb-item active">隐形服务(Stealth Server)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="stealth-server">隐形服务(Stealth Server)</h1>
+<h2 id="_1">介绍</h2>
+<p>通过欺骗微软服务器，让微软认为你是一台正版主机，从而安全的连接Xbox Live</p>
+<h2 id="_2">建议</h2>
+<p>试试吧，如果你不连和Ban机没有任何区别</p>
+<h2 id="_3">推荐的服务</h2>
+<p>如果你喜欢像正版机一样可以使用Proto，如果你喜欢拥有更酷炫的UI可以使用xbGuard或Tethered，如果你想折腾可以使用XBLSC<br />
+关于稳定度:我建议先使用xbGuard，如果出现频繁卡死的情况尝试使用Proto<br />
+Tethered的服务器很不稳定，经常出现连接不上的情况，不推荐使用，建议其他服务不能用的时候尝试使用</p>
+<h2 id="_4">提示</h2>
+<p>如果你确保正确安装后，但连接时出现了秒Ban机的情况，这种是你之前已经Ban过，不是插件的问题</p>
+<h2 id="_5">安装</h2>
+<p>1.升级17559(必须)<br />
+2.选择一个推荐的服务<br />
+3.确保安装过DashLaunch，将下载的文件解压，根据安装位置选择对应的文件(推荐安装到硬盘)，将所有文件放到设备根目录<br />
+4.如果需要添加插件(例如:Sunrise私服，UsbdSecPatch)添加打开Dashlaunch，先加载一次配置文件后再添加<br />
+5.重启主机，如果正确安装会有提示(xbGuard和Tethered:UI更改，Proto:出现Ready To Connect Xbox Live， XBLSC Offline:Fully Stealthed)</p>
+<h2 id="_6">安装后的建议</h2>
+<h3 id="_7">提示</h3>
+<p>不建议你使用修改过的游戏(比如汉化游戏，带修改器的游戏)，使用可能导致启动出错</p>
+<h3 id="_8">安全建议</h3>
+<p>永远不要玩测试版，泄露版游戏，不要使用初代Xbox模拟器，想玩先卸载服务并在断网情况下游玩<br />
+<br />
+如果你想最大程度保证安全，请不要打开任何自制软件(虽说大部分服务都带有欺骗功能，让微软认为你在360主界面)，不要开挂，不要用修改器，不要泄露你的KV(KeyVault)<br />
+如果你想保证安全，可以打开自制软件<br />
+如果你想作死，自制软件随便开，KV随便发，但还是不建议玩测试版，泄露版游戏</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../UsbdSecPatch/UsbdSecPatch/" class="btn btn-neutral float-left" title="UsbdSecPatch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../UsbdSecPatch/UsbdSecPatch/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../js/baidu_tongji.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
