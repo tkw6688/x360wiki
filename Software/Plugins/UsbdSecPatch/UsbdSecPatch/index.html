@@ -84,13 +84,30 @@
     </ul>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">电脑软件</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >手柄</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../PcSoftware/Santroller/Santroller/">Santroller</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
               <p class="caption"><span class="caption-text">插件</span></p>
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">UsbdSecPatch</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#_1">介绍</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_2">安装</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">可能存在的问题</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">安装</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1dl">方式1:作为DL插件</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2nand">方式2:写入主机Nand(有风险)</a>
+    </li>
+        </ul>
     </li>
     </ul>
                   </li>
@@ -123,16 +140,25 @@
               
                 <h1 id="usbdsecpatch">UsbdSecPatch</h1>
 <h2 id="_1">介绍</h2>
-<p>一个取消主机对于手柄安全信息验证的插件，让你使用非官方手柄</p>
-<h2 id="_2">安装</h2>
+<p>一个取消主机对于手柄安全信息验证的插件，让你使用非官方支持XInput的手柄</p>
+<h2 id="_2">可能存在的问题</h2>
+<p>Q:手柄不能正常使用<br />
+A:使用一个转换器，例如树莓派Pico使用<a href="../../../../PcSoftware/Santroller/Santroller/">Santroller</a>固件</p>
+<h2 id="_3">安装</h2>
+<h3 id="1dl">方式1:作为DL插件</h3>
 <p>1.在<a href="https://github.com/InvoxiPlayGames/UsbdSecPatch">此处</a>下载插件(或者在<a href="../UsbdSecPatch.xex">此处</a>下载,版本为1.1)<br />
 2.打开DashLaunch，在插件配置中选择UsbdSecPatch.xex<br />
 3.保存配置并重启主机</p>
+<h3 id="2nand">方式2:写入主机Nand(有风险)</h3>
+<p>1.在<a href="https://github.com/Octal450/J-Runner-with-Extras/releases">此处</a>下载J-Runner<br />
+2.提取主机Nand<br />
+3.J-Runner导入固件并在XeBuild配置中的Patches里勾选UsbdSec,合成固件<br />
+4.刷入Nand</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../../Apps/Homebrew/ConfigTools/DashLaunch/" class="btn btn-neutral float-left" title="DashLaunch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../../PcSoftware/Santroller/Santroller/" class="btn btn-neutral float-left" title="Santroller"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../../StealthServer/StealthServer/" class="btn btn-neutral float-right" title="隐形服务(Stealth Server)">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -156,7 +182,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../../Apps/Homebrew/ConfigTools/DashLaunch/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../../../PcSoftware/Santroller/Santroller/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../../StealthServer/StealthServer/" style="color: #fcfcfc">Next &raquo;</a></span>
